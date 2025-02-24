@@ -1,0 +1,138 @@
+// 
+
+// Para instalar todas las dependencias, ejecuta en la raíz del proyecto el comando: 
+// pip install -r requirements.txt
+
+
+
+
+// PROMPTS PARA GraphQLView
+
+// obtener todos los usuarios 
+
+// query {
+//   allUsers {
+//     id
+//     fullName
+//     username
+//     email
+//   }
+// }
+
+// obtener todos los perfiles
+
+// query {
+//   allProfiles {
+//     id
+//     fullName
+//     bio
+//     country
+//     city
+//     slug
+//     followersCount
+//     followingCount
+//   }
+// }
+
+// obtener perfiles verificados
+
+// query {
+//   verifiedProfiles {
+//     id
+//     fullName
+//     verified
+//   }
+// }
+
+// obtener mis seguidores
+
+// query {
+//   myFollowers {
+//     id
+//     fullName
+//     username
+//   }
+// }
+
+// obtener usuarios seguidos
+
+// query {
+//   myFollowing {
+//     id
+//     fullName
+//     username
+//   }
+// }
+
+// registrar usuario
+
+// mutation {
+//   registerUser(
+//     fullName: "Juan Pérez",
+//     username: "juanp",
+//     email: "juan@example.com",
+//     password: "tuContraseñaSecreta"
+//   ) {
+//     user {
+//       id
+//       fullName
+//       username
+//       email
+//     }
+//     success
+//     errors
+//   }
+// }
+
+// iniciar sesión
+
+// mutation {
+//   loginUser(
+//     email: "juan@example.com",
+//     password: "tuContraseñaSecreta"
+//   ) {
+//     user {
+//       id
+//       fullName
+//       username
+//       email
+//     }
+//     success
+//     errors
+//   }
+// }
+
+// cerrar sesión
+// mutation {
+//   logoutUser {
+//     success
+//   }
+// }
+
+
+// cambiar tuContraseñaSecreta
+// mutation {
+//   changePassword(
+//     oldPassword: "contraseñaActual",
+//     newPassword: "nuevaContraseñaSegura"
+//   ) {
+//     success
+//     errors
+//   }
+// }
+
+// Seguir a un usuario 
+
+// mutation {
+//   followUser(username: "otroUsuario") {
+//     success
+//     errors
+//     targetProfile {
+//       id
+//       fullName
+//       username
+//     }
+//   }
+// }
+
+
